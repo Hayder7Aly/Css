@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+
+            position: relative;
+
+
+
+            border: 2px solid black;
+            width: 30vh;
+            height: 30vh;
+            animation: haider;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-direction: reverse;
+            /* animation-duration: 0ms; */
+        }
+
+        .box1 {
+
+            position: absolute;
+            top: 0px;
+            right: 0px;
+
+            border: 2px solid black;
+            width: 30vh;
+            height: 30vh;
+            animation: ali;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-direction: reverse;
+            /* animation-duration: 0ms; */
+        }
+
+        @keyframes ali {
+
+            0% {
+
+                top: 250px;
+                right: 0px;
+                background-color: black;
+
+
+            }
+
+            25% {
+                top: 250px;
+                right: 250px;
+                background-color: yellow;
+            }
+
+
+            50% {
+
+                top: 0px;
+                right: 250px;
+                background-color: dodgerblue;
+            }
+
+
+            75% {
+
+                top: 0px;
+                right: 50vw;
+                background-color: tomato;
+            }
+
+            100% {
+
+                top: 0px;
+                right: 0px;
+                background-color: skyblue;
+            }
+
+
+        }
+
+        @keyframes haider {
+
+            0% {
+
+                top: 250px;
+                left: 0px;
+                background-color: black;
+
+            }
+
+            25% {
+                top: 250px;
+                left: 250px;
+                background-color: yellow;
+            }
+
+            50% {
+
+                top: 0px;
+                left: 250px;
+                background-color: dodgerblue;
+            }
+
+            75% {
+
+                top: 0px;
+                left: 50vw;
+                background-color: tomato;
+            }
+
+            100% {
+
+                top: 0px;
+                left: 0px;
+                background-color: skyblue;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">Some thing is animation</div>
+    <div class="box1">Some thing is anmation</div>
+
+</body>
+
+</html>

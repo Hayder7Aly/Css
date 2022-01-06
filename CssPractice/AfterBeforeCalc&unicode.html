@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css After&Before Calc &  Unicode</title>
+
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        :root{
+
+            --width:100vw
+
+        }
+
+        .container{
+
+            width: var(--width);
+            height: 100vh;
+            background-color: rgb(43, 38, 92);
+            padding-top: 100px;
+            text-align: center;
+
+
+        }
+
+        h1{
+            color: #fff;
+            font-size: 3rem ;
+            transition: all .5s linear;
+            
+        }
+
+        h1:hover{
+
+            text-shadow: 0 0 45px #fff;
+            
+        }
+
+
+        h1::after{
+            content: "❤";
+            width: calc(var(--width) - 80vw);
+            height: 25px;
+            color: #1abc9c;
+            /* color: red; */
+            font-size: 3rem;
+            display: block;
+            margin: auto;
+            border-bottom: 6.5px solid #3498db;
+        }
+
+ 
+
+        @media (max-width:998px) {
+
+            h1:after{
+
+                width: calc(var(--width) - 70vw);
+            }
+
+            h1{
+                font-size: 1.7rem;
+            }
+            
+        }
+        @media (max-width:700px) {
+
+            h1:after{
+
+                font-size: 1rem;
+                height: 16px;
+                
+            }
+
+            h1{
+                font-size: 1rem;
+            }
+            
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Full-Stack WebDeveloper</h1>
+    </div>
+    
+</body>
+
+</html>

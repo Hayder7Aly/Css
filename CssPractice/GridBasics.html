@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid Layout </title>
+
+    <style>
+
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 25px;
+        }
+
+
+
+
+        .container{
+
+ 
+            width: 100vw;
+            height: auto;
+            color: #000;
+            display: grid;
+
+          
+
+            /* grid layout with using px unit and frictional */
+
+            /* grid-template-rows: 300px 300px;
+            grid-template-columns:300px 300px 1fr; */
+
+
+            /* gird layout with using fr (firctional-unit)  */
+
+            /* display: grid;
+            grid-template-rows: 300px 300px 300px;
+            grid-template-columns: 1fr 2fr 1fr;
+            
+            gap: 10px;
+            row-gap: 10px;
+            column-gap: 10px; */
+
+
+            /* grid layout with using repeat property for productivity  */
+
+            grid-template-rows: 150px 150px;
+            grid-template-columns: repeat(3 , 1fr);
+
+        }
+
+
+        .item{
+
+            background-color:#2196F3;
+            border: 1px solid black;
+        }
+
+
+
+        
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="item" id="item-1">item-1</div>
+        <div class="item" id="item-2">item-2</div>
+        <div class="item" id="item-3">item-3</div>
+        <div class="item" id="item-4">item-4</div>
+        <div class="item" id="item-5">item-5</div>
+        <div class="item" id="item-6">item-6</div>
+        
+    </div>
+
+</body>
+
+</html>

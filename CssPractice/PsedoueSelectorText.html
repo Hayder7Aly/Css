@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psedoue Selector For Text Elements</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 25px;
+
+        }
+
+
+        .container {
+
+            background: #ff7979;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        h1{
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+            font-size: 30px;
+        }
+
+        .text{
+            width: 60vw;
+            height: 60vh;
+        }
+
+        /* span{
+            font-size: 30px;
+            color: yellow;
+        } */
+
+        p.first::first-letter{
+
+            font-size: 4rem;
+            font-weight: lighter;
+            color: yellow;
+            float: left;
+            margin: 0 10px 10px 0;
+            line-height: 0.5;
+        }
+        p.first::first-line{
+            color: yellowgreen;
+            font-weight: bold;
+            /* line-height: 4; */
+        }
+
+        p.select::selection{
+
+            background-color: blueviolet;
+            color: white;
+            
+        }
+
+
+
+
+         
+
+        
+
+
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="text">
+            <h1>Welcome to Code Tech</h1>
+            <p class="first"> Haider Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore quas rem animi nesciunt provident expedita consequatur doloremque nulla tempora deserunt aut culpa amet eligendi aperiam autem optio dolor voluptas maiores dolores sit, quasi nobis ullam velit. Vel numquam rem eveniet, ipsum aliquid expedita quos earum blanditiis voluptatem quo fugit sapiente architecto corporis minima eligendi dolor?</p>
+            <br>
+            <p class="select">Haider Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aspernatur cumque vero suscipit magni eum odit sint praesentium ex aperiam voluptate alias eaque necessitatibus, perferendis totam deleniti voluptatibus nihil sit at debitis! Rerum consequatur corrupti iure unde recusandae velit ea inventore ex qui nesciunt provident quidem, assumenda neque deleniti obcaecati soluta vitae veniam ut blanditiis.</p>
+            <br>
+            <p>Haider Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ea asperiores distinctio? Quos, sit quo sint odit harum quidem eligendi expedita facilis amet iste libero quis beatae placeat nobis natus vero quasi exercitationem rem odio possimus impedit suscipit, voluptas dolor laboriosam. At delectus quaerat ea quod nam reprehenderit cum beatae corrupti repudiandae! Ducimus, pariatur laborum.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

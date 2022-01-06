@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyFrames Animations</title>
+
+    <style>
+
+        .container{
+            background-color: greenyellow;
+
+        }
+
+        .box{
+
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation: haider;
+            animation: harry;
+            animation-duration: 5s;
+            /* animation-iteration-count: infinite; Infinite means infinite animation */
+            animation-iteration-count: 2;
+            /* animation-fill-mode: alternate; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 2s; */
+            /* animation-direction: reverse ; */
+
+        }
+
+
+        @keyframes harry{
+
+            0%{
+
+                top: 0px;
+                left: 0px;
+            }
+
+            25%{
+                top: 0px;
+                left: 250px;
+            }
+
+            75%{
+                top: 250px;
+                left: 250px;
+            
+            }
+
+            100%{
+                top: 250px;
+                left: 0px;
+
+            }
+        }
+   
+
+        @keyframes haider {
+
+            from{
+                width: 100px;
+            }
+
+            to{
+                width: 900px;
+            }
+            
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            This is the box
+        </div>
+    </div>    
+</body>
+
+</html>

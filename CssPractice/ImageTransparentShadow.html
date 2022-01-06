@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageTrasnparentShadow</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family:"ubuntu"
+        }
+
+        html{
+            font-size: 62.5%;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: hsl(206, 21%, 94%);
+            display: grid;
+            place-items: center;
+        }
+
+        img{
+            width: 50rem;
+            height: auto;
+            /* box-shadow: 1rem 1rem 1rem grey; */
+            filter: drop-shadow(1rem 1rem 1rem grey);
+            margin: 10rem 0;
+            transition: all .3s ease-in-out;
+        }
+
+        img:hover{
+
+            filter: drop-shadow(1rem 1rem 1rem rgb(0, 153, 255));            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to CodeTech :)</h1>
+        <img src="Pics/draw.svg" alt="">
+        <p>Support to CodeTech ):</p>
+    </div>
+    
+</body>
+</html>

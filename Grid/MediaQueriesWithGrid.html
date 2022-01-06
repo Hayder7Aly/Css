@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid With Media Queries</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer'
+            ;
+        }
+
+
+        .bdr {
+            border: 2px solid black;
+            background-color: wheat;
+            padding: 25px;
+
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+
+            grid-area: footer;
+            text-align: center;
+        }
+
+        span{
+            padding-left: 30px;
+        }
+
+
+        @media (max-width: 600px) {
+            body {
+                background-color: yellowgreen;
+            }
+
+            .container{
+                grid-template-areas: 
+                'navbar navbar navbar navbar'
+                'section section aside aside'
+                'footer footer footer footer'
+                ;
+            }
+
+
+            span{
+                display: block;
+                text-align: center;
+            }
+
+
+
+            
+        }
+
+
+        @media  (max-width: 1000px) {
+
+            body {
+                background-color: grey;
+
+            }
+
+        }
+
+
+        @media(max-width: 1500px) {
+            body {
+                background-color: tomato;
+
+            }
+
+            aside {
+                display: none;
+            }
+        }
+
+
+        @media(min-width: 1501px) {
+            body {
+                background-color: dodgerblue;
+                border-radius: 50%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container" id='cont'>
+
+        <nav class='bdr'>
+            <span>Home</span>
+            <span>About</span>
+            <span>Service</span>
+            <span>About Me</span>
+        </nav>
+
+        <section class='bdr'>
+            <h2>Learn More In Css </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit asperiores obcaecati, expedita magnam vero illo nesciunt in repudiandae quod cumque repellendus amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto porro eum et voluptatum in eveniet, consequatur quos aut laudantium! Voluptas, maxime recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aliquid blanditiis iure corrupti nulla? Nulla omnis dignissimos asperiores earum doloremque quidem tenetur consectetur enim eos, explicabo dolorum neque accusantium odit id adipisci eveniet.</p>
+        </section>
+
+        <aside class='bdr'>
+            <h2>More About us</h2>
+            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nulla tenetur voluptates temporibus. Accusantium necessitatibus asperiores perferendis. Unde voluptate enim ducimus repudiandae ullam, animi nihil officia, eligendi maiores atque fuga quaerat accusantium error? Rerum unde enim placeat esse exercitationem laudantium, nobis repellendus dignissimos obcaecati dicta similique ipsum at voluptatum alias mollitia eaque earum distinctio aperiam?</p>
+        </aside>
+
+
+        <footer class="bdr">
+            <h2>CodeWithTech 2021 Css</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt officiis molestiae ipsa eveniet architecto corporis id tempora voluptate unde cupiditate quaerat, veniam tempore explicabo cum. Architecto quae molestiae, modi iusto non rem!</p>
+        </footer>
+
+   
+
+
+
+
+
+    </div>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Sliding Effects</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+
+        }
+
+        html{
+            font-size: 62.5%;
+        }
+
+        .container{
+
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: #2f3542;
+
+        }
+
+        h1{
+            color: #fff;
+            font-size: 4rem;
+            letter-spacing: 2px;
+            position: relative;
+            
+        }
+
+        /* My Animation for text  */
+
+        /* h1::before{
+            content: "~WebDeveloper~";
+            width: 0;
+            color: #2ed573;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all .9s linear;
+            overflow: hidden;
+            border-right: .4rem solid #2ed573;
+ 
+        }
+
+        h1:hover::before{
+
+            width: 100%;
+
+
+        } */
+
+        h1::before{
+            content: "~WebDeveloper~";
+            width: 0;
+            color: #2ed573;
+            position: absolute;
+            top: 0;
+            left:0;
+            border-right: .4rem solid #2ed573;
+            animation: slide 3s linear infinite;
+            -webkit-animation: slide 3s linear infinite;
+            overflow: hidden;
+ 
+        }
+
+        @keyframes slide{
+
+            0%{
+                width: 0%;
+            }  
+            50%{
+                width: 100%;
+            }  
+            100%{
+                width: 0%;
+            }  
+            
+        }
+
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>~WebDeveloper~</h1>
+    </div>
+</body>
+</html>

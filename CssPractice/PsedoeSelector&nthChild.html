@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Psedoe Selecotr & nth-child</title>
+
+    <style>
+
+        .container{
+
+            display: block;
+            margin: 50px auto;
+            width: 550px;
+            border: 3px solid black;
+            border-radius: 25px;
+
+        }
+
+        input{
+
+            display: block;
+            margin: 25px auto;
+        }
+
+        input[type='text']{
+            padding: 10px;
+            width: 50%;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+
+        input[type='password']{
+
+            padding: 10px;
+            width: 50%;
+            border-radius: 15px;
+            text-align: center;
+
+        }
+
+        input[value]{
+            background-color: dodgerblue;
+            color: white;
+            padding: 10px;
+            border-radius: 15px;
+            font-size: 20px;
+        }
+
+        a[target]{
+            color: tomato;
+            text-decoration: none;
+            cursor: pointer;
+            display: block;
+            text-align: center;
+
+        }
+
+        /* li:nth-child(2n + 0){
+            color: yellow;
+        } */
+
+
+        ul.changer li:nth-child(3n + 0){
+
+            color: tomato;
+        }
+
+        
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to Google</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="E-mail">
+            <input type="password" placeholder='Password'>
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item1item-1">item 1</li>
+            <li class="item2item-2">item 2</li>
+            <li class="item3item-3">item 3</li>
+            <li class="item4item-4">item 4</li>
+            <li class="item5item-5">item 5</li>
+            <li class="item6item-6">item 6</li>
+            <li class="item7item-7">item 7</li>
+            <li class="item8item-8">item 8</li>
+            <li class="item9item-9">item 9</li>
+            <li class="item10item-10">item 10</li>
+            <li class="item11item-11">item 11</li>
+            <li class="item12item-12">item 12</li>
+        </ul>
+    </div>
+
+
+    <ul class="changer">
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+        <li>item-6</li>
+        <li>item-7</li>
+        <li>item-8</li>
+        <li>item-9</li>
+        <li>item-10</li>
+    </ul>
+
+</body>
+
+</html>

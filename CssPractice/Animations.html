@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .container {
+
+            background-color: rebeccapurple;
+            width: 100vw;
+            height: 100vh;
+
+        }
+
+        .container p {
+            margin: 25px;
+            width: 20vw;
+            height: 20vh;
+            box-shadow: 0 0 50px #fff;
+            border: 2px solid black;
+            animation: animate;
+            animation-duration: 3s;
+            animation-iteration-count: 2;
+            animation-fill-mode: backwards;
+            animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+            animation-delay: .5s;
+            /* animation-direction: reverse; */
+
+            transition: all .5s linear;
+
+            position: absolute;
+
+
+
+        }
+
+        /* @keyframes animate {
+
+            from{
+
+                width: 30vw;
+                height: 25vh;
+                
+            }
+
+            to{
+
+                width: 50vw;
+                height: 50vh;
+            } */
+
+
+        @keyframes animate {
+            0% {
+
+                top: 20vh;
+                left: 0;
+            }
+
+            25% {
+                top: 20vh;
+                left: 20vw;
+            }
+
+            75% {
+                top: 0;
+                left: 20vw;
+
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+
+            }
+        }
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <p>Haider Ali jutt</p>
+    </div>
+
+</body>
+
+</html>

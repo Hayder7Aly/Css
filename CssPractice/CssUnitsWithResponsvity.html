@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Units & Reponsiveness</title>
+    <style>
+
+
+        /* 1rem = 16px */
+        /* 100% = 16px */
+
+        /* incase to exchange the 100% intp 10px so we can do this  */
+
+        /* 1px = 6.25%
+        10px = 10*62.5 = 62.5%*/
+
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+
+            /* font-size: 10px; */
+            font-size: 62.5%;
+
+
+        }
+
+        .container {
+            background-color: #34f8a3;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .firsthead {
+            border: .2rem solid black;
+            width: 40rem;
+            height: 40rem;
+            float: left;
+            font-size: 3rem;
+            background-color: lightskyblue;
+
+
+        }
+
+        .secondhead {
+            font-size: 3rem;
+            width: 40rem;
+            height: 40rem;
+            float: right;
+            border: .2rem solid black;
+            background-color: lightskyblue;
+
+
+        }
+
+ 
+
+        @media(max-width:2000px) and (min-width:1500px){
+
+            html{
+                font-size: 100%;
+            }
+            
+        }
+        @media(max-width:1499px) and (min-width:1000px){
+
+            html{
+                font-size: 70%;
+            }
+            
+        }
+        @media(max-width:999px) and (min-width:60px){
+
+            html{
+                font-size: 40%;
+            }
+            
+        }
+
+
+  
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="firsthead">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo facere, consequuntur debitis, molestias
+                officia reiciendis nulla ipsam, ad dignissimos dolores delectus ut. Aliquam natus dolores sapiente porro
+                nesciunt sit quisquam dolorem assumenda voluptatum possimus!</p>
+        </div>
+        <div class="secondhead">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptatem cum molestias tempora
+                dolores ullam unde ducimus libero cupiditate voluptatibus nesciunt modi necessitatibus, et nam autem
+                quis illum magni ipsum consectetur laudantium? Dolore, cupiditate!</p>
+        </div>
+    </div>
+
+
+
+</body>
+
+
+</html>

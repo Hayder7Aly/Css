@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Navigation Menu In Css</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: serif;
+        }
+
+        body{
+
+            background: url("Pics/drop.png") no-repeat;
+            height: 100%;
+            width: 100%;
+      
+            background-size: cover;
+            overflow-x: hidden;
+        }
+
+        .dropdown{
+
+            width: 80%;
+            height: 100px;
+            margin: 10px auto;
+           
+
+        }
+
+        .dropdown ul{
+            padding: 0px;
+        }
+
+        .dropdown ul li{
+            float: left;
+            background: black;
+            color: white;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            list-style: none;
+            font-size: 20px;
+            text-align: center;
+            opacity: .6;
+        }
+
+        .dropdown ul li ul {
+            /* display: none; */
+            visibility: hidden;
+        }
+
+        .dropdown ul li:hover > ul{
+            /* display: block; */
+            visibility: visible;
+        }
+
+        ul li:hover{
+            background-color: darkgreen;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <ul>
+
+
+            <li>USA
+
+                <ul>
+                    <li>New York</li>
+                </ul>
+
+            </li>
+
+            <li>Pakistan
+
+                <ul>
+                    <li>Lohore</li>
+                    <li>Karachi</li>
+                    <li>ChowkAzam</li>
+
+                </ul>
+
+            </li>
+
+            <li>France
+                <ul>
+                    <li>Francias</li>
+                    <li>Tomel Kavel</li>
+                </ul>
+            </li>
+
+
+            <li>Australia
+                <ul>
+                    <li>Capition</li>
+                    <li>Silbery</li>
+                </ul>
+            </li>
+
+
+
+            <li>Brazil</li>
+
+        </ul>
+    </div>
+</body>
+</html>

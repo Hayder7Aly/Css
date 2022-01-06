@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Tables</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 20px;
+            font-family: "Times New Roman";
+        }
+
+        .first{
+            background-color: black;
+            color:  white;
+            margin: 25px;
+
+        }
+
+        .first th,td{
+            border: 2px solid green;
+            padding: 15px;
+        }
+
+        .second{
+            border-collapse: collapse;
+            background-color: black;
+            color: white;
+            margin: 25px;
+        }
+
+        .second th,td{
+            border: 2px solid green;
+            padding: 15px;
+
+        }
+
+        .third{
+            border-collapse: collapse;
+            background-color: black;
+            color: white;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            width: 100%;
+        }
+        .third th{
+            height: 90px;
+        }
+
+
+        table.third th , table.third td{
+
+            height: 80px;
+
+            border: 2px solid green;
+            padding: 15px;
+        }
+
+
+        .four{
+            border-collapse: collapse;
+            background-color: black;
+            color : white;
+            margin-top : 25px;
+            margin-bottom : 25px;
+            width: 100%;
+        }
+
+        .four th, .four td{
+            height: 80px;
+            border: 2px solid green;
+            padding: 15px;
+            vertical-align: text-top;
+        }
+
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <table class="first">
+
+        <tr>
+            <th>Customer ID</th>
+            <th>Customer Name</th>
+            <th>Customer Bills</th>
+        </tr>
+
+        <tr>
+            <td>9038</td>
+            <td>Haider Ali</td>
+            <td>550 Rs.</td>
+        </tr>
+
+        <tr>
+            <td>8938</td>
+            <td>Ali Raza</td>
+            <td>1000 Rs.</td>
+        </tr>
+
+
+    </table>
+
+
+    <table class="second">
+        <tr>
+            <th>Student ID</th>
+            <th>Student Name</th>
+            <th>Student Section</th>
+        </tr>
+
+        <tr>
+            <td>1234</td>
+            <td>Haider Ali</td>
+            <td>Class A</td>
+        </tr>
+        <tr>
+            <td>5343</td>
+            <td>Ali raza Jutt</td>
+            <td>Class B</td>
+        </tr>
+    </table>
+
+
+    <table class="third">
+        <tr>
+            <th>Car Model</th>
+            <th>Car Name</th>
+            <th>Car Price</th>
+        </tr>
+
+        <tr>
+            <td>F03-3T-3</td>
+            <td>Farrari</td>
+            <td>100000 Rs.</td>
+        </tr>
+
+        <tr>
+            <td>R-349-38</td>
+            <td>Audi 08</td>
+            <td>200000 Rs.</td>
+        </tr>
+    </table>
+
+
+    <table class="four">
+        <tr>
+            <th>Employee Name</th>
+            <th>Employee ID</th>
+            <th>Employee Role</th>
+        </tr>
+
+        <tr>
+            <td>Farman Ali</td>
+            <td>34837-383</td>
+            <td>Programmer</td>
+        </tr>
+        <tr>
+            <td>Haider Ali</td>
+            <td>343427-383</td>
+            <td>Programmer</td>
+        </tr>
+    </table>
+
+
+
+</body>
+
+</html>

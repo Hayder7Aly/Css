@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries In Css</title>
+
+    <style>
+        .box {
+
+            background-color: tomato;
+            color: black;
+            text-align: center;
+            font-size: 3em;
+            display: none;
+
+        }
+
+        @media (max-width: 320px) {
+
+            #box-1 {
+                display: block;
+                background-color: cyan;
+            }
+        }
+
+        @media (max-width: 500px) and (min-width: 330px) {
+            #box-2 {
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+
+
+        @media (max-width: 800px) and (min-width: 501px) {
+
+
+            #box-3 {
+
+                display: block;
+                background-color: green;
+            }
+        }
+
+        @media (max-width:1800px) and (min-width:801px){
+
+            #box-4{
+                display: block;
+                background-color: dodgerblue;
+                
+            }
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="box" id="box-1">Iphone Screen</div>
+    <div class="box" id="box-2">Tablet Screen</div>
+    <div class="box" id="box-3">Computer Screen</div>
+    <div class="box" id="box-4">FullWide Screen</div>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selection</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "ubuntu";
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: hsl(206, 21%, 94%);
+        }
+
+        h1{
+
+            text-align: center;
+        }
+
+        p{
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1::selection{
+            background-color: tomato;
+            color: white;
+        }
+
+
+
+        ::selection{
+            background-color: rgb(66, 20, 112);
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome To Code Blog</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa explicabo, amet pariatur molestiae in, temporibus placeat debitis rerum eveniet blanditiis velit dolorum odio porro numquam maiores deleniti nulla excepturi inventore.</p>
+    </div>
+</body>
+</html>
+
+
+

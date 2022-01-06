@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Battle</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: hsl(206, 21%, 94%);   
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            border-radius: 50% 50% 0 0;
+            background-color: #1e272e;
+
+        }
+
+        #box2{
+            transform: translateY(-100%);
+            
+            
+            
+        }
+
+   
+
+        #box1,#box3{
+
+            border-radius: 0 0 50% 50%;
+        }
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+    </div>
+</body>
+</html>

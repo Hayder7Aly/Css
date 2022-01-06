@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Before and After Element</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: monospace;
+            font-size: 2rem;
+        }
+
+        :root{
+
+            --b-a-width:15vw;
+            --b-a-md-width:20vw;
+            --b-a-sm-width:50vw;
+        }
+
+        .container{
+
+            width: 100vw;
+            height: 100vh;
+            background-color: #3498db;
+            display: grid;
+            place-items: center;
+        }
+
+        h1{ 
+            color: #fff;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            position: relative;
+            padding: 15px;
+        }
+
+
+
+        /* h1::before{
+            content: " Full StackWeb Developer ";
+            display: block;
+     
+        }
+
+        h1::after{
+            content: " YouTuber ";
+            display: block;
+        } */
+
+
+
+        h1::before{
+            content: "";
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: var(--b-a-width);
+            border-bottom: 10px solid #2c3e50 ;
+            
+        }
+
+        h1::after{
+            content: "";
+            position: absolute;
+            bottom: 0%;
+            left: 50%;
+            transform: translateX(-50%);
+            width : var(--b-a-width);
+            border-bottom: 10px solid #2c3e50;
+        }
+
+        @media (max-width: 700px) {
+            h1::after{
+                width: var(--b-a-sm-width);
+                
+            }
+            h1::before{
+                width: var(--b-a-sm-width);
+
+            }
+
+        }
+
+
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Thapa Technical</h1>
+         
+    </div>
+    
+</body>
+
+</html>

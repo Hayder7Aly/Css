@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility & z-index</title>
+
+    <style>
+
+        *{
+
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        .container{
+
+            width: 100vw;
+            height: 60vh;
+            background-color: #3399ff ;
+            position: relative;
+        }
+
+        .item1{
+
+            width: 200px;
+            height: 200px;
+            background-color: royalblue;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .item2{
+            width: 200px;
+            height: 200px;
+            background-color: rosybrown;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* z-index: 2; */
+        }
+        .item3{
+            width: 200px;
+            height: 200px;
+            background-color: #f930d3;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /* visibility has following values  */
+
+        /* visible -- > is default for show the content */
+        /* hidden -- > is used for hide the content and take the space of content  */
+        /* collapse -- > is used for collapse the content and not take the space fo content */
+        /* dispaly: none ; -- > is used for hide the content and not take the space of content */
+
+        p{
+            position: relative;
+            font-size: 25px;
+            font-family: 'Courier New', Courier, monospace;
+            border: 2px solid black;
+            width: 500px;
+            height: 250px;
+            top: 100px;
+            background-color: rgb(195, 173, 230);
+
+            
+            /* Usage of visiblity  */
+
+            /* visibility: visible;
+            visibility: hidden;
+            visibility : collapse;
+            display: none; */
+
+            
+
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+    </div>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt fugit explicabo placeat maxime quidem natus eos. Placeat ut ipsam numquam laborum provident, reiciendis incidunt nihil perspiciatis consectetur esse nostrum porro.</p>
+    
+
+
+</body>
+
+</html>

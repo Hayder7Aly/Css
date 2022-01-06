@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legend & FieldSets</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #fff;
+            outline: none;
+        }
+
+        .container{
+            margin: auto;
+            width: 75vw;
+        }
+
+
+        body{
+  
+            background-color: rebeccapurple;
+        }
+
+
+        h1{
+
+            text-transform: uppercase;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+
+        }
+
+        input{
+
+            size: 30px;
+            width: 70%;
+            height: calc(2rem + 2px);
+        }
+
+        legend{
+            text-align: center;
+            font-size: 1.4rem;
+            padding: 20px;
+            
+        }
+
+        span{
+            padding: 20px;
+            
+        }
+
+        input{
+
+            padding: 1.3rem;
+            margin: 20px;
+            border: 3px solid rebeccapurple;
+            border-radius: 20px;
+            transition: all .3s linear;
+            color: black;
+
+        }
+
+        input:focus{
+
+            border: 3px solid lightskyblue;
+
+        }
+
+        div{
+            
+            text-align: center;
+        }
+
+        fieldset{
+            width: 60%;
+            margin: auto;
+        }
+
+        button{
+
+      
+            text-align: top;
+            padding: 0;
+            
+
+            width: 70%;
+            height: 34px;
+            padding-bottom: 1.7rem;
+            padding-top: 1.7rem;
+            border-radius: 60px;
+            margin: 10px;
+            background-color: black;
+            color: #fff;
+            font-size: 1.2rem;
+            transition: all .3s linear;
+            margin-left:100px;
+            
+
+        }
+
+        button:hover{
+
+            background-color: rgb(76, 228, 164);
+            color: #000;
+        }
+
+        
+
+ 
+
+
+ 
+        
+    </style>
+    
+</head>
+ 
+<body>
+
+    <div class="container">
+
+    <h1>Welcome To BioData Security</h1>
+
+    <form>
+
+        <fieldset>
+            <legend>Welcome To BioData Security</legend>
+
+            <div>
+                <span>Name : </span><input type="text" id="name">
+            </div>
+            <div>
+                <span>Email : </span><input type="text" id="ema">
+            </div>
+            <div>
+                <span>D o B : </span><input type="date"  id="dob" min="2020-01-01" max="2021-12-12">
+            </div>
+
+            <div>
+                <button>Submit</button>
+            </div>
+
+            
+
+            
+
+        </fieldset>
+
+        
+
+    </form>
+
+</div>
+    
+</body>
+
+</html>

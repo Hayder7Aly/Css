@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Background Part 2</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .first{
+            background: url("/Pics/mountain.jpg");
+            background-size: auto; /*cover contain*/
+            border: 2px solid lightblue;
+            padding: 25px;
+            margin: 20px;
+
+
+        }
+        .second{
+            background: url("/Pics/mountain.jpg") no-repeat ;
+            background-size: 335px 355px;
+            border: 2px solid lightgray;
+            padding: 25px;
+            margin: 20px;
+
+        }
+
+        .third{
+
+            background-color: grey;
+            border: 10px dotted black;
+            background-clip: padding-box; /*padding-box border-box context box*/
+
+            /* background-origin: border-box; is same as the background-clip but it is used for picture where picture is set its attribute are same as the background-clip */
+
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="first">
+        <h1>First Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequuntur aliquam, qui, autem dolores enim architecto pariatur recusandae ipsum dicta magni molestiae distinctio totam doloribus obcaecati velit iure veniam! Enim?</p>
+    </div>
+    <div class="second">
+        <h1>First Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequuntur aliquam, qui, autem dolores enim architecto pariatur recusandae ipsum dicta magni molestiae distinctio totam doloribus obcaecati velit iure veniam! Enim?</p>
+    </div>
+    <div class="third">
+        <h1>First Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consequuntur aliquam, qui, autem dolores enim architecto pariatur recusandae ipsum dicta magni molestiae distinctio totam doloribus obcaecati velit iure veniam! Enim?</p>
+    </div>
+</body>
+</html>

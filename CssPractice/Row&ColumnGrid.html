@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 25px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #fff;
+        }
+
+        .container {
+
+            width: 100vw;
+
+            background-color: #3b2363;
+            display: grid;
+
+
+            /* grid-template-columns:  200px 200px 1fr;
+            grid-template-rows: 300px 200px; */
+
+
+            /* grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2,1fr); */
+
+
+            /* gap: 10px; */
+            
+      
+         
+            
+
+
+
+        }
+
+        .item{
+
+            border: 2px solid red;
+            /* height: 200px; */
+ 
+
+
+            
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="item" id="item-1">item-1</div>
+        <div class="item" id="item-2">item-2</div>
+        <div class="item" id="item-3">item-3</div>
+        <div class="item" id="item-4">item-4</div>
+        <div class="item" id="item-5">item-5</div>
+        <div class="item" id="item-6">item-6</div>
+    </div>
+
+</body>
+
+</html>

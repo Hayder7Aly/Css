@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout In Css</title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'ubuntu';
+        }
+
+        .container{
+
+            width: 100vw;
+            height: 100vh;
+            background-color: #dfe6e9;
+            color: #fff;
+
+            
+        }
+
+
+        h1{
+            font-size: 4rem; 
+            padding: 50px;
+            text-align: center;
+            color: #000;
+        }
+
+        p{
+            text-align: center;
+        }
+
+        .parent{
+            width: 80vw;
+            height: auto;  
+            margin: auto;
+            /* background-color: #636e72;  */
+            display: flex ;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            /* transition: all 0.2 linear; */
+        }
+
+        .child{
+            height: 200px;
+            background-color: #bbc4c4;
+            box-shadow: 0 0 20px #bac3c3;
+            flex: 2 1 200px;
+            margin: 20px;
+          
+        }
+
+        .child:first-child{
+            background-color: #ffbe76;
+        }
+
+        .child:last-child{
+            background-color: #ff7979;
+        }
+
+        @media(max-width:786px){
+            
+            .container{
+                height: auto;
+            }
+
+            
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Services</h1>
+        <div class="parent">
+            <div class="child"><p>Code Tech :)</p></div>
+            <div class="child"><p>Code Tech :)</p></div>
+            <div class="child"><p>Code Tech :)</p></div>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>

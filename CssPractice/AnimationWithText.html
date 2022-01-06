@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animationwithText</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: rgba(62, 170, 165, 0.926);
+        }
+
+        h1{
+
+            position: relative;
+  
+        }
+
+        h1::before{
+            content: "WebDeveloper";
+            position: absolute;
+            top: 0;
+            left: 110%;
+            width: 0;
+            border-right: 4px solid #000;
+            color: #000;
+            animation: slide 2s linear infinite;
+            -webkit-animation: slide 2s linear infinite;
+            overflow: hidden;
+
+
+        }
+       
+
+        
+
+        
+        
+
+        @keyframes slide {
+            
+        
+            0%{
+                width: 0%;
+                }
+
+            50%{
+                width: 173%;
+                }
+
+            100%{
+                width: 0%;
+                }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Haider Is </h1>
+    </div>
+    
+</body>
+</html>

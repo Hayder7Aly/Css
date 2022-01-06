@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Layout & Display Property</title>
+
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 20px;
+            font-family: "Times New Roman";
+        }
+
+        .container {
+            border: 2px solid black;
+            border-radius: 15px;
+        }
+
+        .container li {
+            display: inline;
+        }
+
+        span {
+            display: block;
+            border: 2px solid black;
+        }
+
+        a.check {
+            display: block;
+        }
+
+        p.hidden {
+            /* display: none; */
+
+            visibility: hidden;
+        }
+
+
+        /*
+
+        position is used for  position the value . 
+
+        static
+        relative
+        fixed
+        absolute
+        sticky
+
+        */
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li><a href="YouTube.com">YouTube</a></li>
+            <li><a href="/BoxModel.html">Model</a></li>
+            <li><a href="/CssBackground.html">Background</a></li>
+        </ul>
+    </div>
+
+    <span>Span is a inline element but we can do that it in block element with the help of display property</span>
+    <span>Span is a inline element but we can do that it in block element with the help of display property</span>
+
+    <h1>NOTE : anchor tag is a inline element but we can change it with the help of display property in css.</h1>
+
+    <a href="something.com" class="check">HTML</a>
+    <a href="something.com" class="check">CSS</a>
+    <a href="something.com" class="check">JavaScript</a>
+
+    <p class="hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem pariatur, ratione quisquam
+        corporis quo consequuntur officia fuga iste, qui ea, quam quod consequatur dolorem praesentium neque? Accusamus
+        nulla libero cupiditate?</p>
+
+
+    <p class="lorem">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum magni minima cupiditate aliquid similique,
+        veniam corporis quaerat totam consequuntur repellendus perspiciatis quia, aspernatur ex exercitationem nam
+        voluptatum tempora aut dignissimos.
+    </p>
+
+
+</body>
+
+</html>

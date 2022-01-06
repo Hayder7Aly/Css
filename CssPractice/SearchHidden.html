@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/fontawesome-free-5.15.2-web/css/all.min.css">
+
+    <title>Search Hidden</title>
+
+
+    <style>
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+
+            font-size: 62.5%;
+        }
+
+        body {
+
+            min-height: 100vh;
+            background-color: #273c75;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .searchBox {
+
+            position: relative;
+            display: grid;
+            place-items: center;
+        }
+
+
+        a,
+        a:hover {
+
+            text-decoration: none;
+
+        }
+
+        .searchText {
+
+            /* width: 25rem; */
+            width: 0;
+            /* padding: 1.7rem; */
+
+
+            border-radius: 5rem;
+            border: none;
+            transition: all 0.3s linear;
+            outline: none;
+        }
+
+        .srch-btn {
+
+            width: 4rem;
+            height: 4rem;
+            background-color: #192156;
+            color: #fff;
+            position: absolute;
+            right: 1rem;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+
+
+        }
+
+        .searchBox:hover>.searchText{
+
+            padding: 1.3rem;
+            width: 25rem;
+
+
+        }
+
+        .searchBox:hover>.srch-btn {
+            background-color: #fff;
+            color: lightskyblue;
+        }
+
+
+        .searchBox:hover {
+            box-shadow: 0 0 1.5rem rgba(0, 0, 0, .4);
+        }
+
+        .searchText:focus{
+            width: 25rem;
+            padding: 1.3rem;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+
+    <div class="searchBox">
+        <input type="search" class='searchText' placeholder="Search ...">
+        <a href="#" class="srch-btn">
+            <i class="fas fa-search fa-2x"></i>
+            
+        </a>
+    </div>
+
+</body>
+
+</html>

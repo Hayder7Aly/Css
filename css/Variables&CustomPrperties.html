@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables & Custom Properties</title>
+
+    <style>
+
+        :root{
+
+            --box-color : lightgrey;
+            --maxw: 550px;
+        }
+
+        .container{
+            margin: auto;
+            max-width: var(--maxw);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+ 
+        }
+
+        .box{
+
+            
+
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            border: 2px solid grey;
+            margin: 10px 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+    </div>
+
+</body>
+
+</html>

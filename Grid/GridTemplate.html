@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template</title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Ubuntu' , sans-serif;
+        }
+
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer'
+            ;
+        }
+
+        .item{
+            border: 2px solid black;
+            background-color: lightgrey;
+        }
+
+        #navbar{
+            grid-area: navbar;
+   
+        }
+
+        #section{
+            grid-area: section;
+
+        }
+
+        #aside{
+            grid-area: aside;
+
+        }
+
+        #footer{
+            grid-area: footer;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar"  class="item">
+            Home News Contact Us About Me
+        </div>
+        <div id="section" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum atque nulla omnis quibusdam similique quam nobis reiciendis placeat velit, ipsum soluta, excepturi, mollitia officiis officia minus neque. Debitis, ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatil Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium necessitatibus, accusamus odit magnam quasi dignissimos iure dolorum incidunt consequuntur modi laboriosam, corporis, et excepturi. Soluta dignissimos velit reprehenderit ducimus voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolorum laboriosam voluptatibus natus eos nostrum iure facilis ratione? Neque velit deleniti amet optio non ipsa quisquam asperiores ab, reiciendis odio. bus porro quos quisquam, ipsa odit praesentium vero dignissimos architecto rerum consequuntur similique, sunt unde veritatis blanditiis saepe sed labore? Amet, hic?</div>
+        <div id="aside" class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus porro quos voluptate, beatae soluta maxime inventore, accusantium deleniti quibusdam, impedit ex magnam vero quo. Voluptas maxime aspernatur corporis earum veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quaerat, nesciunt commodi quod quibusdam praesentium est reiciendis? Nesciunt debitis nemo modi est, sapiente odit iure amet illo ducimus quia sit?</div>
+
+        <!-- <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div>
+        <div class="item">Item-13</div>
+        <div class="item">Item-14</div> -->
+
+        <footer id="footer" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatem hic doloremque ratione ex nam culpa aut, cumque explicabo fugiat voluptates animi minima laborum itaque iusto error ipsam incidunt exercitationem perferendis esse dolores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora aperiam doloribus sit, totam unde laudantium. Aspernatur praesentium, laboriosam repellat quae itaque impedit totam obcaecati vitae. Nisi consequuntur accusantium quae.lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos rerum eaque tempora, dolorem alias quisquam officia voluptatibus ad, fuga, omnis officiis magnam. Inventore sapiente sint recusandae impedit quas consequuntur blanditiis.</footer>
+    </div>
+</body>
+
+</html>
+

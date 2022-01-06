@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreLoader</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 900;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #000000;
+            display: grid;
+            place-items: center;
+
+        }
+        .center{
+
+            width: 20rem;
+            height: 20rem;
+            position: relative;
+            /* background-color:transparent; */
+          
+           
+        }
+
+        .rot{
+            width: 20rem;
+            height: 20rem;
+            border-right: .6rem solid #ffffff;
+            /* border-left: .6rem solid #356;
+            border-top: .6rem solid #fa3eaf;
+            border-bottom: .6rem solid #faefa3; */
+            border-radius: 50%;
+            animation: rote 2s linear infinite;
+
+            
+        }
+
+        @keyframes rote {
+
+            from{
+                transform: rotate(0deg);
+            }
+
+            to{
+                transform: rotate(360deg);
+            }
+            
+        }
+
+    
+        h1{
+            font-size: 3rem;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <div class="rot"></div>
+            <h1>Loading</h1>
+        </div>
+    </div>
+</body>
+</html>

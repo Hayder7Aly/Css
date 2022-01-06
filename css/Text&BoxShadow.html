@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text Shadow</title>
+
+    <style>
+        /* box-shadow: inset offset-x offset-y blur-radius spread-radius color; */
+
+        /* text-shadow offset-x offset-y blur-raius spread-radius color */
+
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            display: flex;
+        }
+
+        .card{
+
+
+            background-color: rgb(234, 234,234);
+            /* border: 2px solid black; */
+            padding: 20px;
+            margin: 20px;
+            /* box-shadow: 4px 3px 5px green; */
+            /* box-shadow: -5px -5px green; */
+            /* box-shadow: 5px 7px 5px 10px green; */
+            box-shadow: 5px 5px 5px 10px rgba(44, 44, 44, 0.5);
+        }
+
+        #card-1{
+            box-shadow:  inset 5px 5px 5px 10px rgba(60, 202, 195, 0.8);
+            /* background-color: grey; */
+        }
+
+        .card:hover{
+            /* box-shadow: 5px 5px 10px 3px tomato; */
+            box-shadow: 8px 8px 8px 8px yellow , 12px 12px 12px 12px red;
+
+        }
+
+
+        .card h2{
+
+
+
+            text-shadow: 1.5px 1.5px 5px tomato;
+        
+        }
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+     
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>HTML Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione itaque delectus adipisci non officiis sit totam distinctio molestiae nobis molestias, aliquam, recusandae dolorem vel ullam ab hic! Saepe, quia molestiae.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>CSS Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione itaque delectus adipisci non officiis sit totam distinctio molestiae nobis molestias, aliquam, recusandae dolorem vel ullam ab hic! Saepe, quia molestiae.</p>
+
+        </div>
+        <div class="card" id="card-3">
+            <h2>JavaScript Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione itaque delectus adipisci non officiis sit totam distinctio molestiae nobis molestias, aliquam, recusandae dolorem vel ullam ab hic! Saepe, quia molestiae.</p>
+        </div>
+    </div>
+</body>
+
+</html>

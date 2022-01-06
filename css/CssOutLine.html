@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Outline</title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 20px;
+            font-family: "Segoe UI";
+        }
+
+        .demo{
+            background-color: lightgrey;
+            border: 2px solid black;
+            width: 550px;
+            outline: #4CAF50 dotted 50px; /*Outline is used for fill the margin with outline coding this is very usefull for show the box model*/
+            padding: 15px;
+            margin: 50px;
+
+        }
+
+        .demo2{
+            background-color: lightgrey;
+            border: 2px solid black;
+            width: 550px;
+            outline: #4CAF50 solid 10px;
+            outline-offset: 10px; /*Set the space between border and outline*/
+        }
+    </style>
+</head>
+<body>
+
+    <div class="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus architecto aut facilis sequi numquam, optio hic corporis quos in animi quisquam unde illo quasi deleniti a eos voluptas doloribus eius.</div>
+    <div class="demo2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae fugiat fuga at odit? Unde nisi illo voluptatum, totam vitae ipsam itaque nobis ea accusamus, laudantium quisquam, et aut ab quas.</div>
+    
+</body>
+</html>

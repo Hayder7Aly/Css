@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Lists</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 20px;
+            font-family: "Segoe UI";
+
+        }
+
+
+        /*Used ol and ul for list style type */
+
+        ol.first{
+
+            list-style-type: upper-latin;
+            margin: 20px;
+        }
+
+        ol.first li{
+            color: darkcyan;
+            background-color: black;
+        }
+
+
+        ul.second{
+            margin: 30px;
+            list-style-image: url("/Pics/img_marker.png");
+            margin: 50px;
+            padding: 5px;
+        }
+
+
+
+
+        .third{
+            margin: 50px;
+            list-style-position: inside;
+        }
+
+
+        .four{
+            margin: 50px;
+            list-style-position: outside;
+        }
+
+
+        ol.demo1{
+            background-color: grey;
+            padding: 20px;
+            margin: 10px;
+
+        
+        }
+
+        ol.demo1 li{
+            background-color: black;
+            padding: 5px;
+            color: green;
+            margin: 20px;
+    
+        }
+
+        ul.demo2{
+            background-color: aqua;
+            padding: 20px;
+            margin: 20px
+
+        }
+
+        ul.demo2 li{
+            background-color: darkcyan;
+            color: darkmagenta;
+            margin: 20px;
+        }
+
+
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <ol class='first'>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ol>
+
+
+    <ul class="second">
+        <li>First 2 Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ul>
+
+    <ul class="third">
+
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+
+    </ul>
+
+    <ul class="four">
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item
+
+        </li>
+    </ul>
+
+    <ol class="demo1">
+
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+
+    </ol>
+
+    <ul class="demo2">
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item
+
+        </li>
+    </ul>
+
+    
+
+</body>
+
+</html>

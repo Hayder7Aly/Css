@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect Css</title>
+    <link rel="stylesheet" href="/fontawesome-free-5.15.2-web/css/all.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1{
+
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .container {
+
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style-type: none;
+            width: 200px;
+            height: 200px;
+            /* background-color: #0984e3; */
+            border-radius: 50%;
+            margin: 10px;
+            display: grid;
+            place-items: center;
+            border: 2px solid #0984e3;
+            position: relative;
+        }
+
+        i {
+            color: #0984e3;
+
+        }
+
+        li::before {
+
+            content: "";
+            position: absolute;
+
+            width: inherit;
+            height: inherit;
+            background-color: #0984e3;
+            border-radius: 50%;
+            opacity: 0;
+            /* visibility: hidden; */
+            transition: all .3s linear;
+            z-index: -1;
+
+
+        }
+
+        li:hover::before {
+            transform: scale(0.8);
+            opacity: 1;
+            /* visibility: visible; */
+        }
+
+        li:hover > i {
+
+            color: white;
+        }
+
+        li::after {
+
+            content: "";
+            position: absolute;
+
+            width: inherit;
+            height: inherit;
+            /* background-color: #0984e3; */
+            border: 2px dashed #0984e3;
+            border-radius: 50%;
+            opacity: 0;
+            transition: all .3s linear;
+            /* z-index: -1; */
+
+
+        }
+
+        li:hover::after{
+            animation: rotates 11s linear infinite;
+            opacity: 1;
+
+        }
+
+        @keyframes rotates {
+
+            from{
+
+                transform: scale(.9) rotate(0deg);
+                
+
+
+            }
+
+            to{
+                transform: scale(.9) rotate(360deg);
+
+            }
+
+
+            
+        }
+    </style>
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Frontened WebDeveloper</h1>
+
+    <div class="container">
+        <ul>
+            <li><i class="fab fa-3x fa-html5"></i></li>
+            <li><i class="fab fa-3x fa-css3"></i></li>
+            <li><i class="fab fa-3x fa-js"></i></li>
+            <li><i class="fab fa-3x fa-react"></i></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

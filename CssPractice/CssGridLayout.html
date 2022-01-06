@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid Layout Project</title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "ubuntu";
+            font-weight: 900;
+            color: #ffffff;
+
+        }
+
+
+        main{
+            width: 75%;
+            margin: 50px auto;
+            border: 1px solid grey;
+            display: grid;
+
+            grid-template-rows: 60px 100px 200px 60px;
+            grid-template-columns: repeat(3, 1fr ) 150px;
+
+            grid-gap: 20px;
+
+        }
+
+        .item-1{
+            background-color: #ff4757;
+            grid-column: 1/-1;
+            }
+        .item-2{background-color: #2ed573;}
+        .item-3{background-color: #1e90ff;}
+        .item-4{background-color: #5352ed;}
+        .item-5{
+            background-color: #2f3542;
+            grid-row: 2/4;
+            grid-column: 4/5;
+        }
+        .item-6{
+            background-color: #ffa502;
+            grid-column: 1/span 3;}
+        .item-7{background-color: #00d2d3;
+        grid-column: 1/-1;}
+
+
+
+        
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="item-1">Header</div>
+        <div class="item-2">box1</div>
+        <div class="item-3">box2</div>
+        <div class="item-4">box3</div>
+        <div class="item-5">slidebar</div>
+        <div class="item-6">main-content</div>
+        <div class="item-7">footer</div>
+
+    </main>
+    
+</body>
+</html>

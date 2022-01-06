@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition In Css</title>
+
+    <style>
+
+        body{
+            background-color: black;
+            color: white;
+        }
+
+        #box{
+
+            
+            display: flex;
+            height: 250px;
+            width: 250px;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            border: 2px solid black;
+
+            /* transition-property: background-color;
+            
+            transition-duration: 2s; */
+            
+            /* transition-timing-function: ease-in-out; */
+            /* transition-delay: 2s; */
+
+            /* transition Shorthand property  */
+
+            /* transition: backgroud-color 2s ease-in 2s ; */
+
+            transition: all 1s ease-in-out ;
+
+
+        }
+
+        #box:hover{
+            background-color: tomato;
+            width: 400px;
+            height: 400px;
+            font-size: 50px;
+            font-family: cursive;
+            border-radius: 50%;
+            text-decoration: underline;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>This is CSS Transition Property</h1>
+    <div class="container">
+        <div id="box">This is my Box</div>
+    </div>
+    
+</body>
+
+
+</html>

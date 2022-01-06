@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Float & Clear LayOut</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        img {
+            /* float: right; */
+            /* float: none; */
+        
+            display: block;
+            margin: auto;
+            padding: 15px;
+
+        }
+
+        p{
+            padding: 4px;
+            margin: auto;
+            border: 2px solid black;
+            width: 550px;
+        }
+
+        div.first{
+            padding: 3px;
+            margin: 3px;
+            float: right;
+            border: 2px solid black;
+
+        }
+
+        div.second{
+            padding: 3px;
+            margin: 3px;
+            float: right;
+            clear: both;
+
+
+        }
+
+       
+    </style>
+
+</head>
+
+<body>
+
+
+    <p>
+        <img src="/Pics/w3css.gif" alt="Loading ...">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit qui totam placeat distinctio! Fugiat quasi enim
+        natus sed neque atque tempora explicabo deserunt beatae minima saepe, qui quos repellendus ipsum?
+        Optio delectus corporis eum perspiciatis, cumque dicta distinctio quibusdam. Corporis praesentium quos vitae
+        similique dolor cum modi, quibusdam rerum odit assumenda eveniet, veniam iste, saepe consequuntur optio sint
+        architecto eaque.
+        Veniam alias reprehenderit autem ab! Ab unde omnis, distinctio doloremque mollitia incidunt reprehenderit
+        voluptatibus at exercitationem, esse facere eos, quisquam aperiam est alias illo perferendis nesciunt voluptas!
+        Libero, sequi perferendis.
+        Facilis dolorem eius soluta explicabo obcaecati, recusandae sunt atque necessitatibus tempora possimus
+        voluptatem animi in ducimus natus eveniet alias fuga ipsum maxime corrupti eum nihil excepturi est odio maiores.
+        At?
+        Accusamus cum eum doloremque praesentium tenetur earum architecto. Repellendus dolor praesentium est iure vel
+        illo voluptas dolore consequuntur officiis pariatur commodi voluptate minima illum atque quidem, hic aliquam
+        assumenda quos.
+    </p>
+
+    <div class="first">this is first paragraph for float and clear concept</div>
+    <div class="second">this is second paragrph for float and clear concept</div>
+
+
+</body>
+
+</html>

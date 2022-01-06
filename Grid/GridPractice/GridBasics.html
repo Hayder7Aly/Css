@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Basics</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "ubuntu";
+        font-weight: 900;
+      }
+
+      .container {
+        padding: 5rem;
+        width: 100%;
+        height: 100vh;
+        background-color: hsl(206, 21%, 94%);
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 2fr;
+        grid-template-rows: 1fr 2fr 2fr;
+        gap: 2rem 2rem;
+      }
+
+      .container div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #af3cea;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item1">Grid Basics</div>
+      <div class="item2">Grid Basics</div>
+      <div class="item3">Grid Basics</div>
+      <div class="item4">Grid Basics</div>
+      <div class="item5">Grid Basics</div>
+      <div class="item6">Grid Basics</div>
+      <div class="item7">Grid Basics</div>
+      <div class="item8">Grid Basics</div>
+      <div class="item9">Grid Basics</div>
+      <div class="item10">Grid Basics</div>
+    </div>
+  </body>
+</html>

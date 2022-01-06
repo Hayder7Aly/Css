@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caret</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: rebeccapurple;
+            
+        }
+
+        .caret{
+
+            border-top: 50px solid yellow;
+            border-right: 50px solid transparent;
+            border-bottom: 50px solid yellow;
+            border-left: 50px solid yellow;
+
+     
+            border-radius: 50%;
+            position: relative;
+
+        }
+
+        .eye{
+
+
+            position: absolute;
+            top: -30px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #000;
+        }
+
+
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="caret" id="caretone">
+            <div class="eye"></div>
+        </div>
+        
+    </div>
+</body>
+</html>

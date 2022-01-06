@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Menu Effect</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav{
+
+            height: 100px;
+            background-color: #81ecec;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100vw;
+
+        }
+
+        .logo{
+            width: 40%;
+            color: #0984e3;
+            text-shadow: 2px 2px  2px #dfe6e9;
+            padding-left: 55px;
+        
+            
+
+        }
+
+        .menu{
+
+            width: 60%;
+            /* background-color: tomato ;  */
+            display: flex;
+            justify-content: space-evenly ;
+
+        }
+
+        a{
+            text-decoration: none;
+            color: #2d3436;
+            font-weight:bold ;
+            position: relative;
+        }
+
+        a::before{
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: #000;
+            transition: all .3s linear;
+
+        }
+        a::after{
+            content: "";
+            position: absolute;
+            top:0;
+            right: 0;
+            width: 0;
+            height: 3px;
+            background-color: #000;
+            transition: all .3s linear;
+
+        }
+
+        a:hover::before{
+            width: 100%;
+            background-color: #0984e3;
+        }
+
+        a:hover::after{
+            width: 100%;
+            background-color: #0984e3;
+        }
+
+        
+
+
+
+    </style>
+
+</head>
+
+<body>
+    
+    <nav>
+        <div class="logo">
+            <h1>Haider's Blog</h1>
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Gallery</a>
+            <a href="#">Portfolio</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+</body>
+
+</html>

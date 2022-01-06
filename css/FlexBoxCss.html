@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css FlexBox Concepts</title>
+
+    <style>
+        .container {
+            width: 100%;
+            height: 50vh;
+            border: 2px solid black;
+
+
+            /* Initialize the container as a flex box  */
+            
+
+            display: flex;
+
+
+            /* Flex Properties for Flex Container  */
+
+            /* 1 . Flex direction */
+
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+            /* 2 . flex-wrap */
+
+            /* flex-wrap: wrap; */
+            
+            /* flex-wrap: wrap-reverse; */
+
+
+            /* 3 . flex-flow */
+
+            /* Flex-Flow  is a shorthand for use flex-direction and flex-wrap*/
+
+            /* flex-flow: row-reverse wrap; */
+
+
+            /* flex-box other property used for flex container  */
+
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: end; */
+            /* justify-content: flex-start; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+
+
+            /* flex-box property for container is align-items  is used for align the conatiner boxes */
+
+    
+            align-items: center;
+            /* align-items: flex-end; */
+            /* align-items: strech; */ /*strech is used for responsive website and make a gaps*/
+
+
+            /* It is only used for as justify-content but in face we use in verticle in item */
+
+            /* align-content: space-around; */
+            
+
+
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 10px;
+
+        }
+
+        /* flex properties used for item  */
+        
+        /* 1 . order property is used for order the item for hier from all the item in last */
+
+        /* 2 . flex-grow property is used for growth the item in containe box  */
+
+        /* 3 . flex-shrink property is used for when a repsonsive in small device then it will be shrink  */
+
+        /* 4 . flex-basis property is used when a flex-direction is set in row or column then it will be handle item width or height  */
+
+        /* 5 . flex property is shorthand for flex grow,shrink,basix and order is important for this */
+
+        /* 6 . align-self property is used for align the item in container and override the align-item property of container.  */
+        
+        #box1{
+            
+            /* order: 2; */
+            /* flex-grow: 2;
+            flex-shrink: 2; */
+        }
+        #box2{
+
+            /* flex-basis: 340px; */
+
+            /* flex-grow: 3;
+            flex-shrink: 3; */
+
+        }
+        #box3{
+            order: 4;
+
+            /* flex: 2 2 344px; */
+            /* align-self: center; */
+            /* align-self: center; */
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box" id="box1">First Box</div>
+        <div class="box" id="box2">Second Box</div>
+        <div class="box" id="box3">Third Box</div>
+        <!-- <div class="box" id="box4">Fourth Box</div>
+        <div class="box" id="box5">Fivth Box</div>
+        <div class="box" id="box6">Sixth Box</div> -->
+    </div>
+
+</body>
+
+</html>

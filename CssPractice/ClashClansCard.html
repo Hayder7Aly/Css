@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clash Clans Card</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "ubuntu";
+        font-weight: 900;
+      }
+
+      .container {
+        width: 100%;
+        height: 100vh;
+        background: url("/Pics/undraw_authentication_fsn5.png");
+        background-size: 100% 100%;
+        position: relative;
+      }
+
+      .center{
+          width: 280px;
+          height: auto;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50% , -50%);
+          border-radius: 16px;
+          text-align: center;
+          box-shadow:  -1px 15px 30px -10px black;
+          background-color: #fff;
+
+      }
+
+      .image{
+          width: inherit;
+          height: 250px;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: linear-gradient(to right, #67624c , #767c6c);
+          border-top-right-radius: 16px;
+          border-top-left-radius: 16px;
+
+      }
+
+      figure img{
+          width: 300px;
+          height: 250px;
+          margin-top: -20px;
+          margin-left: 20px;
+      }
+
+      .about{
+          padding: 30px 15px;
+      }
+
+      .about h3{
+
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: bold;
+          letter-spacing: 2px;
+          color: #ec9b3b;
+
+      }
+
+      .about h1{
+          text-transform: uppercase;
+          word-spacing: 3px;
+          font-size: 20px;
+          padding: 5px 0 0 0;
+
+      }
+
+      .about p{
+          padding-top: 10px;
+          font-size: 14px;
+          color: #a5b1c2;
+
+      }
+
+      .lower{
+          width: inherit;
+          height: inherit;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          background: #ec9b3b;
+          border-bottom-right-radius: 16px;
+          border-bottom-left-radius: 16px;
+
+      }
+
+      .lower div{
+          padding: 10px 0;
+          color: #fff;
+          /* background-color: red; */
+          flex-grow: 1;
+          border-right: 1px solid white;
+
+      }
+
+      .lower div:last-child{
+          border-right: none;
+          
+      }
+
+    .lower .lower_number{
+        font-size: 25px;
+        font-weight: bold;
+        padding-bottom: 3px;
+
+    }
+
+    .lower .lower_text{
+        text-transform: uppercase;
+        font-size: 11px;
+    }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="center">
+
+        <div class="card">
+          <!-- image part of card  -->
+
+          <div class="image">
+            <figure>
+              <img src="/Pics/apple.png" alt="" />
+            </figure>
+          </div>
+
+          <!-- about part of card  -->
+
+          <div class="about">
+            <h3>Level 1</h3>
+            <h1>The Barbarien</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
+              voluptate facere, perferendis ipsam distinctio veritatis suscipit
+              nemo labore voluptates blanditiis deleniti expedita voluptas
+              autem, amet cumque deserunt laborum iure. Laborum!
+            </p>
+          </div>
+
+          <!-- power part of card  -->
+
+          <div class="lower">
+            <div>
+              <p class="lower_number">16</p>
+              <p class="lowertext">speed</p>
+            </div>
+
+            <div>
+              <p class="lower_number">20 <sup>s</sup></p>
+              <p class="lowertext">Traning</p>
+            </div>
+            <div>
+              <p class="lower_number">0.4</p>
+              <p class="lowertext">Range</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

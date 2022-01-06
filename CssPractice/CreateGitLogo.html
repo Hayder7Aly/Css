@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CreateGitLogo</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-color: hsl(206, 21%, 94%);
+        display: grid;
+        place-items: center;
+      }
+
+      .gitlogo {
+        width: 15rem;
+        height: 15rem;
+        background-color: #f05030;
+        border-radius: 1.5rem;
+        outline: none;
+        position: relative;
+        transform: rotate(45deg);
+        box-shadow: 0 0 20px 2px #fff;
+      } 
+
+      .line1 {
+        width: 11rem;
+        height: 1.2rem;
+        background-color: #fff;
+        position: absolute;
+        top: 3.5rem;
+      }
+
+      .line1::before {
+        content: "";
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background-color: #fff;
+        position: absolute;
+        top: -1rem;
+        left: 3rem;
+      }
+
+      .line1::after {
+        content: "";
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background-color: #fff;
+        position: absolute;
+        top: -1rem;
+        right: -1rem;
+      }
+
+      .line2{
+        width: 9rem;
+        height: 1.2rem;
+        background-color: #fff;
+        position: absolute;
+        top: 6.7rem;
+        left: 3rem;
+        transform: rotate(46.5deg);
+      }
+
+      .line2::before {
+        content: "";
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        background-color: #fff;
+        position: absolute;
+        top: -1rem;
+        right:-1rem;
+        
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        
+      <div class="gitlogo">
+        <div class="line1"></div>
+        <div class="line2"></div>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Bar of Social Media</title>
+    <link rel="stylesheet" href="/fontawesome-free-5.15.2-web/css/all.min.css">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+
+        a{
+
+            text-decoration: none;
+            width: 190px;
+            background-color: #3b5999;
+            color: #fff;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 5px;
+            font-size: 18px;
+            transform: translateX(-140px);
+            transition: all .3s linear;
+        }
+
+        a:hover{
+            transform: translateX(0);
+        }
+
+        a i{
+            padding-left: 20px;
+            font-size: 30px!important;
+            animation: letszoom .3s linear alternate-reverse infinite;
+
+
+
+        }
+
+        @keyframes letszoom {
+            from{
+                transform: scale(0.8) ;
+            }
+
+            to{
+                transform: scale(1);
+            }
+            
+        }
+
+        .messenger{
+            padding-left: 0px;
+        }
+
+        .facebook{
+            background-color: #3b5998;
+
+        }
+        .instagram{
+            background-color: #e4405f;
+        } 
+        .twitter{
+
+            background-color: #00eced;
+
+
+
+        }
+
+        .youtube{
+            background-color: #cd201f;
+
+        }
+
+        .linkdin{
+            background-color: #007785;
+        }
+        .whatsapp{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="#" class="facebook">
+            click here to visit <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="#" class="twitter">
+            click here to visit <i class="fab fa-twitter-square"></i>
+        </a>
+        <a href="#" class="instagram">
+            click here to visit <i class="fab fa-instagram-square"></i>
+        </a>
+        <a href="#" class="linkdin">
+            click here to visit <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#" class="youtube">
+            click here to visit <i class="fab fa-youtube-square"></i>
+        </a>
+        <a href="#" class="messenger">
+            click here to visit <i class="fab fa-facebook-messenger"></i>
+        </a>
+        <a href="#" class="whatsapp">
+            click here to visit <i class="fab fa-whatsapp"></i>
+        </a>
+      
+    </div>
+
+    
+
+</body>
+</html> 

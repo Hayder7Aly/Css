@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Fill Text Color</title>
+    <style>
+        *{
+
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+        }
+
+        .container{
+
+            height: 100vh;
+            width: 100vw;
+
+            background-color: rebeccapurple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1{
+            color: #fff;
+            position: relative; 
+            font-size: 3rem;
+
+
+        }
+
+        h1::before{
+
+            content: "WebDeveloper";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            color: #ff7675; 
+            transition: all 1s linear;
+            overflow: hidden;
+
+        }
+
+        h1:hover::before{
+            width: 100%;
+            text-shadow: 5px 5px 2px #2d3436;
+        
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>WebDeveloper</h1>
+    </div>
+    
+</body>
+</html>

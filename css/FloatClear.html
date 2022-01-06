@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Float Clear</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+        .container {
+
+            border: 2px solid black;
+            width: 900px;
+            margin: 40px auto;
+
+        }
+
+
+        .item {
+
+            border: 2px solid black;
+            margin: 14px;
+            padding: 6px;
+            background-color: rgb(238, 238, 238);
+        }
+
+        #fruit {
+
+            width: 45%;
+            float: left;
+
+
+        }
+
+        #computer {
+
+
+            width: 45%;
+            float: right;
+
+        }
+
+        #electronic {
+
+
+            /* width: 100%; */
+            clear: both;
+
+            /* float: left; */
+
+        }
+
+        p,h1{
+            text-align: justify;
+            /* text-align: left; */
+        }
+
+        h1.head{
+            font-size: 30px;
+            text-align: center;
+            margin: 20px;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="head">Welcome To My Grocerry Store</h1>
+        <div id='fruit' class="item">
+            <h1>Fruits Grocery</h1>
+            <p id='frupara' class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem officia
+                explicabo maxime pariatur voluptatem illum rem reprehenderit quibusdam, consequuntur ullam, nihil quasi
+                perspiciatis amet! Qui dolor ut a est pariatur. Lorem, ipsum dolor sit amet . Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel animi necessitatibus tenetur excepturi illum culpa ratione rerum, eaque odio libero nostrum blanditiis nisi. Dignissimos molestiae eos fugiat nulla quae porro.</p>
+        </div>
+        <div id='computer' class="item">
+            <h1>Computers</h1>
+            <p id='compara' class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem officia
+                explicabo maxime pariatur voluptatem illum rem reprehenderit quibusdam, consequuntur ullam, nihil quasi
+                perspiciatis amet! Qui dolor ut a est pariatur. Lorem, ipsum dolor sit amet . Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ut porro cumque molestias et explicabo nihil perferendis minima delectus fugit eaque sed quibusdam ipsum, voluptatum laboriosam? Iste ipsum quis corporis.</p>
+        </div>
+        <div id='electronic' class="item">
+            <h1>Electronics</h1>
+            <p id='elecpara' class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem officia
+                explicabo maxime pariatur voluptatem illum rem reprehenderit quibusdam, consequuntur ullam, nihil quasi
+                perspiciatis amet! Qui dolor ut a est pariatur. Lorem, ipsum dolor sit amet .</p>
+        </div>
+        <div id='mobile' class="item">
+            <h1>Mobile Phone</h1>
+            <p id='mobpara' class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem officia
+                explicabo maxime pariatur voluptatem illum rem reprehenderit quibusdam, consequuntur ullam, nihil quasi
+                perspiciatis amet! Qui dolor ut a est pariatur. Lorem, ipsum dolor sit amet .</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

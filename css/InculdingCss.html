@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Tutorial</title>
+
+    
+    
+    
+    <!-- how to include internal css  -->
+    
+    <style>
+
+        .Myclass {
+            
+            background-color: bisque;
+            color: black;
+            font-size: 30px;
+        }
+        
+        #myId {
+            background-color: green !important; /* !important is used for used only this style for myid*/
+        }
+        
+        p.center,
+        #center,
+        .userclass {
+            background-color: black;
+            color: green;
+            font-size: 30px;
+            text-align: center;
+        }
+        </style>
+
+<!-- how to include external css  -->
+<!-- order is very important for link the css if already include the internal css last thing is accepted then the backward css .  -->
+<link rel="stylesheet" href="purpose.css">
+
+</head>
+
+<body>
+    <!-- Hwo to inclue inline css -->
+    <p style="background-color: tomato; color: black; font-size: 30px;">Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Eius ullam culpa atque esse totam cum, impedit reiciendis iusto dolorum odio harum vitae natus
+        sequi quae doloremque. Iste ipsum laboriosam accusantium!</p>
+
+    <p class='Myclass'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid dolorum temporibus eius vitae
+        quas neque possimus maiores delectus dignissimos consectetur reiciendis repellat, dolorem, maxime voluptate
+        dolore saepe nam ducimus odio.</p>
+
+    <p id='myId'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aliquam at architecto obcaecati,
+        labore sed nobis nulla aliquid maxime itaque saepe, doloribus qui cupiditate voluptatum asperiores error ex
+        nihil quam?</p>
+
+    <p class='center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vitae animi aliquid veniam
+        quisquam repellendus architecto, voluptatum tempora provident suscipit rem quasi dolorum sint quidem, facere
+        consequuntur molestias numquam inventore?</p>
+
+    <p class='userclass'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni et quisquam vitae iusto,
+        reiciendis consectetur totam dignissimos adipisci reprehenderit a ut culpa molestias dolorum quaerat error
+        numquam accusantium fuga officia?</p>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

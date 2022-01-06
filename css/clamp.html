@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typo graphy automatically | responsive</title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Ubuntu' , sans-serif;
+        }
+
+        html{
+            font-size: 62.5%;
+        }
+
+        body{
+ 
+            margin: clamp(.9rem , 5vw , 3rem);
+        }
+        h1{
+            /* font-size: 5vw; it is not good for big and small devices  */
+            /* first arrguments - min-range */
+            /* last arrguments - max-range
+            middle-arrguments mean between first/last */
+            font-size: clamp(3rem , 4vw , 6rem);
+        }
+        p{
+            font-size: clamp(1.3rem , 2vw ,  2rem);
+        }
+    </style>
+</head>
+<body>
+    <h1>Dev Hayder Aly Jutt</h1>
+    <p>The clamp() CSS function clamps a value between an upper and lower bound. clamp() enables selecting a middle value within a range of values between a defined minimum and maximum. It takes three parameters: a minimum value, a preferred value, and a maximum allowed value</p>
+</body>
+</html> 
